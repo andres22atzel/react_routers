@@ -8,9 +8,11 @@ import Contact from "./components/Contact";
 export default class App extends Component {
   render() {
     return (
+      // Here we implement the browser router tag to enable routes
       <BrowserRouter>
         <div className="App">
           <Navbar />
+          {/* we place the exact property so that the path is look up, it strictly look for what is written */}
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />

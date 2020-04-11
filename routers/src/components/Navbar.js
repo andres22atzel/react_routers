@@ -1,4 +1,6 @@
 import React from "react";
+//To use link and prevent the router changes to reload the components, we use links and navlinks
+import {Link, NavLink} from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -7,13 +9,15 @@ const Navbar = () => {
         <a className="brand-logo">Poke'Times</a>
         <ul className="right">
           <li>
-            <a href="/">Home</a>
+              {/* Here we use a link tag */}
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+              {/* Here we use NavLinks, It place a class active to the tag */}
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
       </div>
