@@ -11,7 +11,7 @@ const Navbar = (/*props*/) => {
   return (
     <nav className="nav-wrapper red darken-3">
       <div className="container">
-        <a href="# " className="brand-logo">Poke'Times</a>
+        <a href="/" className="brand-logo">Poke'Times</a>
         <ul className="right">
           <li>
             {/* Here we use a link tag */}
